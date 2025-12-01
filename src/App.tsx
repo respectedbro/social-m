@@ -1,5 +1,5 @@
 import "./App.scss";
-import { RegisterPage } from "./pages/registration/ui/RegisterPage";
+import { RegisterPage } from "./RegisterPage";
 
 function App() {
   return (
