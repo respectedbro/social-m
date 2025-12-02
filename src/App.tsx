@@ -1,14 +1,13 @@
-import "./App.scss";
-import { auth } from "./shared/api/firebase.ts";
+import './App.scss';
+import {AppRouter} from '@/app/router.tsx';
+import {useAuthListener} from '@/shared/hooks/useAuthListener.ts';
 
 function App() {
-  console.log("FIREBASE AUTH TEST:", auth);
+    useAuthListener();
 
-  return (
-    <div className="container">
-      <div>Test</div>
-    </div>
-  );
+    return (
+        <AppRouter/>
+    );
 }
 
 export default App;
